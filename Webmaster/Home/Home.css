@@ -152,12 +152,12 @@ section {
 
 
 .two {
-    background: url('bence-balla-schottner-fdSJH2f7E8I-unsplash.jpg') no-repeat center center fixed;
+    background: url('../Images/bence-balla-schottner-fdSJH2f7E8I-unsplash.jpg') no-repeat center center fixed;
     background-size: cover;
 }
 
 .four {
-    background: url('markus-spiske-pwFr_1SUXRo-unsplash.jpg') no-repeat center center fixed;
+    background: url('../Images/markus-spiske-pwFr_1SUXRo-unsplash.jpg') no-repeat center center fixed;
     background-size: cover;
 }
 
