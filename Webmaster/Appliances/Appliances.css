@@ -34,29 +34,23 @@ p {
 
 .cta {
 	display: inline-block;
-	padding: 10px 30px;
-	color: white;
+	padding: 5px 15px; /* Adjusted padding */
+	color: rgb(0, 0, 0);
 	background-color: transparent;
 	border: 2px solid green;
-	font-size: 2rem;
+	font-size: 1.5rem; /* Adjusted font-size */
 	text-transform: uppercase;
-	letter-spacing: 0.1rem;
+	letter-spacing: 0.05rem; /* Adjusted letter-spacing */
 	margin-top: 30px;
 	transition: 0.3s ease;
 	transition-property: background-color, color;
 }
 .cta:hover {
-	color: white;
+	color: rgb(0, 0, 0);
 	background-color: rgb(70, 220, 20);
 }
-.brand h1 {
-	font-size: 3rem;
-	text-transform: uppercase;
-	color: white;
-}
-.brand h1 span {
-	color: green;
-}
+
+
 
 /* Hero Section */
 #hero {
@@ -123,7 +117,7 @@ p {
 	animation-delay: 2.5s;
 }
 
-/* End Hero Section */
+
 
 /* solutions Section */
 #solutions .solutions {
@@ -184,76 +178,10 @@ p {
     color: white;
     text-align: left;
 }
-/* End solutions Section */
 
 
-/* Projects section */
-#projects .projects {
-    flex-direction: column;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 100px 0;
-}
-#projects .projects-header h1 {
-    margin-bottom: 50px;
-}
-#projects .all-projects {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-#projects .project-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 80%;
-    margin: 20px auto;
-    overflow: hidden;
-    border-radius: 10px;
-}
-#projects .project-info {
-    padding: 30px;
-    flex-basis: 50%;
-    height: 100%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
-    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-    color: white;
-    overflow: hidden; /* Ensure text doesn't overflow */
-}
-#projects .project-info h1,
-#projects .project-info h2,
-#projects .project-info p {
-    width: 100%; /* Ensure text wraps inside the box */
-    overflow-wrap: break-word; /* Break long words */
-}
-#projects .project-img {
-    flex-basis: 50%;
-    height: 300px;
-    overflow: hidden;
-    position: relative;
-}
-#projects .project-img:after {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-    opacity: 0.7;
-}
-#projects .project-img img {
-    transition: 0.3s ease transform;
-}
-#projects .project-item:hover .project-img img {
-    transform: scale(1.1);
-}
-/* End Projects section */
+
+
 
 
 /* About Section */
@@ -302,7 +230,7 @@ p {
 	border: 7px solid green;
 	z-index: -1;
 }
-/* End About Section */
+
 
 /* Keyframes */
 @keyframes hamburger_puls {
@@ -341,7 +269,7 @@ p {
 }
 
 
-/* End Keyframes */
+
 
 /* Media Query For Tablet */
 @media only screen and (min-width: 768px) {
@@ -357,35 +285,16 @@ p {
 	#hero h1 {
 		font-size: 7rem;
 	}
-	/* End Hero */
+
 
 	/* solutions Section */
 	#solutions .solution-bottom .solution-item {
 		flex-basis: 45%;
 		margin: 2.5%;
 	}
-	/* End solutions Section */
 
-	/* Project */
-	#projects .project-item {
-		flex-direction: row;
-	}
-	#projects .project-item:nth-child(even) {
-		flex-direction: row-reverse;
-	}
-	#projects .project-item {
-		height: 400px;
-		margin: 0;
-		width: 100%;
-		border-radius: 0;
-	}
-	#projects .all-projects .project-info {
-		height: 100%;
-	}
-	#projects .all-projects .project-img {
-		height: 100%;
-	}
-	/* End Project */
+
+
 
 	/* About */
 	#about .about {
@@ -410,9 +319,9 @@ p {
 	#about .col-right h1 {
 		text-align: left;
 	}
-	/* End About */
+
 }
-/* End Media Query For Tablet */
+
 
 /* Media Query For Desktop */
 @media only screen and (min-width: 1200px) {
@@ -423,4 +332,3 @@ p {
 		margin: 1.5%;
 	}
 }
-/* End  Media Query For Desktop */

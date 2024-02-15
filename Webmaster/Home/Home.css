@@ -44,39 +44,7 @@
 
 
 
-.hero-button {
-    position: absolute;
-    top: 70%; 
-    left: 5%; 
-    transform: translateY(-50%); 
-    background-color: #ffffff;
-    color: #000000;
-    padding: 1.5vw 5vw; 
-    font-size: 1.5vw; 
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    z-index: 3;
-}
 
-.hero-button {
-    display: inline-block;
-    font-size: 1em;
-    background: #fff;
-    padding: 10px 30px;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-weight: 500;
-    color: #111;
-    letter-spacing: 2px;
-    transition: 0.2s;
-}
-
-.hero-button:hover {
-    letter-spacing: 8px;
-    background-color: green;
-    color: white;
-}
 
 .hidden {
     opacity: 0;
@@ -451,7 +419,7 @@ header {
 
 
 .section.two {
-    height: 700px;
+    height: 950px;
 }
 
 
