@@ -152,12 +152,12 @@ section {
 
 
 .two {
-    background: url('../Images/bence-balla-schottner-fdSJH2f7E8I-unsplash.jpg') no-repeat center center fixed;
+    background: url('../Images/bence-balla-schottner-fdSJH2f7E8I-unsplash.jpg');
     background-size: cover;
 }
 
 .four {
-    background: url('../Images/markus-spiske-pwFr_1SUXRo-unsplash.jpg') no-repeat center center fixed;
+    background: url('../Images/markus-spiske-pwFr_1SUXRo-unsplash.jpg') ;
     background-size: cover;
 }
 
@@ -446,27 +446,22 @@ header {
 }
 
 .section.one {
-    height: 500px;
+    height: 700px;
 }
 
 
 .section.two {
-    height: 500px;
+    height: 700px;
 }
 
 
 .section.three {
-    height: 500px;
+    height: 700px;
 }
 
 
 .section.four {
-    height: 500px;
-}
-
-
-.section.five {
-    height: 500px;
+    height: 700px;
 }
 
 .hidden {
