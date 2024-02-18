@@ -1,1 +1,1 @@
-Compiling green energy solutions, smart home intiatives, and more. Website made for the 2024 TSA Webmaster Competition.
+Website compiling green energy solutions, smart home intiatives, and more. Made for the 2024 TSA Webmaster Competition.
