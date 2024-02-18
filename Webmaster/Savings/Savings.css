@@ -34,13 +34,13 @@ p {
 
 .cta {
 	display: inline-block;
-	padding: 5px 15px; /* Adjusted padding */
+	padding: 5px 15px; 
 	color: rgb(0, 0, 0);
 	background-color: transparent;
 	border: 2px solid green;
-	font-size: 1.5rem; /* Adjusted font-size */
+	font-size: 1.5rem; 
 	text-transform: uppercase;
-	letter-spacing: 0.05rem; /* Adjusted letter-spacing */
+	letter-spacing: 0.05rem; 
 	margin-top: 30px;
 	transition: 0.3s ease;
 	transition-property: background-color, color;
@@ -394,3 +394,4 @@ p {
         opacity: 1;
     }
 }
+
