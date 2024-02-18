@@ -4,7 +4,7 @@ a {
 	text-decoration: none;
 }
 .container {
-	min-height: 100vh;
+	min-height: 93.7vh;
 	width: 100%;
 	display: flex;
 	align-items: center;
@@ -54,7 +54,7 @@ p {
 
 /* Hero Section */
 #hero {
-	background-image: url(../Images/amazon-alexa-j-leclercq-6QWdecFKyYA-unsplash.jpg);
+	background-image: url(../Images/pexels-pixabay-209224.jpg);
 	background-size: cover;
 	background-position: top center;
 	background-attachment: fixed;
@@ -91,11 +91,11 @@ p {
 	animation-delay: 1s;
 }
 #hero h1:nth-child(2) {
-	animation-delay: 2s;
+	animation-delay: 0.5s;
 }
 #hero h1:nth-child(3) {
 	animation: text_reveal_name 0.5s ease forwards;
-	animation-delay: 3s;
+	animation-delay: 1.5s;
 }
 #hero h1 span {
 	position: absolute;
@@ -111,10 +111,10 @@ p {
 	animation-delay: 0.5s;
 }
 #hero h1:nth-child(2) span {
-	animation-delay: 1.5s;
+	animation-delay: 0.1s;
 }
 #hero h1:nth-child(3) span {
-	animation-delay: 2.5s;
+	animation-delay: 1s;
 }
 
 
@@ -331,4 +331,66 @@ p {
 		flex-basis: 22%;
 		margin: 1.5%;
 	}
+}
+
+/* arrow */
+.loading-container {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    animation: loading-appear 0.5s ease-in-out 2.2s forwards;
+}
+
+.loading-scroll {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    animation: loading-down 1.5s infinite;
+    -webkit-animation: loading-down 1.5s infinite;
+}
+
+.loading-scroll::before {
+    content: '';
+    position: absolute;
+   bottom: 60px;
+    left: 18px;
+    width: 18px;
+    height: 18px;
+    border-left: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    transform: rotate(-45deg);
+}
+
+@keyframes loading-down {
+    0% {
+        transform: translate(0);
+    }
+    20% {
+        transform: translateY(15px);
+    }
+    40% {
+        transform: translate(0);
+    }
+}
+
+@-webkit-keyframes loading-down {
+    0% {
+        transform: translate(0);
+    }
+    20% {
+        transform: translateY(15px);
+    }
+    40% {
+        transform: translate(0);
+    }
+}
+
+@keyframes loading-appear {
+    to {
+        opacity: 1;
+    }
 }

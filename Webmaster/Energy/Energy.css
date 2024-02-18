@@ -4,7 +4,7 @@ a {
 	text-decoration: none;
 }
 .container {
-	min-height: 100vh;
+	min-height: 93.7vh;
 	width: 100%;
 	display: flex;
 	align-items: center;
@@ -60,7 +60,7 @@ p {
 
 /* Hero Section */
 #hero {
-	background-image: url(../Images/premium_photo-1682144283931-1dae4d929271.avif);
+	background-image: url(../Images/pexels-solarimo-gmbh-4230062.jpg);
 	background-size: cover;
 	background-position: top center;
 	background-attachment: fixed;
@@ -223,7 +223,7 @@ p {
     flex-direction: column;
     
     color: rgb(0, 0, 0);
-    overflow: hidden; /* Ensure text doesn't overflow */
+    overflow: hidden; 
     
 }
 
@@ -240,9 +240,10 @@ p {
 #about .about {
 	flex-direction: column-reverse;
 	text-align: center;
-	max-width: 1500px;
+	max-width: 11500px;
 	margin: 0 auto;
 	padding: 100px 20px;
+	background-color: rgb(246, 246, 246);
 }
 #about .col-left {
 	width: 250px;
@@ -271,14 +272,14 @@ p {
     height: 100%;
     width: 100%;
     position: relative;
-    border: 10px solid white;
-    overflow: hidden; /* Ensures the image doesn't overflow its container */
+    border: 10px solid rgb(103, 190, 49);
+    overflow: hidden; 
   }
   
   #about .col-left .about-img img {
-    height: 100%; /* Makes sure the image fills its container */
-    width: 100%; /* Makes sure the image fills its container */
-    object-fit: cover; /* Ensures the image covers the entire container */
+    height: 100%; 
+    width: 100%; 
+    object-fit: cover; 
   }
   
 
@@ -401,4 +402,67 @@ p {
 		flex-basis: 22%;
 		margin: 1.5%;
 	}
+}
+
+
+/* arrow */
+.loading-container {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    animation: loading-appear 0.5s ease-in-out 3.7s forwards;
+}
+
+.loading-scroll {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    animation: loading-down 1.5s infinite;
+    -webkit-animation: loading-down 1.5s infinite;
+}
+
+.loading-scroll::before {
+    content: '';
+    position: absolute;
+   bottom: 60px;
+    left: 18px;
+    width: 18px;
+    height: 18px;
+    border-left: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    transform: rotate(-45deg);
+}
+
+@keyframes loading-down {
+    0% {
+        transform: translate(0);
+    }
+    20% {
+        transform: translateY(15px);
+    }
+    40% {
+        transform: translate(0);
+    }
+}
+
+@-webkit-keyframes loading-down {
+    0% {
+        transform: translate(0);
+    }
+    20% {
+        transform: translateY(15px);
+    }
+    40% {
+        transform: translate(0);
+    }
+}
+
+@keyframes loading-appear {
+    to {
+        opacity: 1;
+    }
 }
