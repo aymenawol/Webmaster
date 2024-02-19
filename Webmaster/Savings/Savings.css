@@ -4,7 +4,7 @@ a {
 	text-decoration: none;
 }
 .container {
-	min-height: 100vh;
+	min-height: 93.7vh;
 	width: 100%;
 	display: flex;
 	align-items: center;
@@ -31,12 +31,25 @@ p {
 .section-title span {
 	color: green;
 }
-/* unique css to me allan ilano */
+
+.cta {
+	display: inline-block;
+	padding: 5px 15px; 
+	color: rgb(0, 0, 0);
+	background-color: transparent;
+	border: 2px solid green;
+	font-size: 1.5rem; 
+	text-transform: uppercase;
+	letter-spacing: 0.05rem; 
+	margin-top: 30px;
+	transition: 0.3s ease;
+	transition-property: background-color, color;
+}
+/*unique css to savings*/
 .mini-section-title {
 	font-size: 1.5rem;
 	letter-spacing: 0.05rem;
-	text-align: center;
-}
+	text-align: center;}
 ul {
 	margin-left: 10vh;
 	
@@ -70,7 +83,7 @@ ul {
 
 /* Hero Section */
 #hero {
-	background-image: url(../Images/amazon-alexa-j-leclercq-6QWdecFKyYA-unsplash.jpg);
+	background-image: url(../Images/pexels-pixabay-209224.jpg);
 	background-size: cover;
 	background-position: top center;
 	background-attachment: fixed;
@@ -107,11 +120,11 @@ ul {
 	animation-delay: 1s;
 }
 #hero h1:nth-child(2) {
-	animation-delay: 2s;
+	animation-delay: 0.5s;
 }
 #hero h1:nth-child(3) {
 	animation: text_reveal_name 0.5s ease forwards;
-	animation-delay: 3s;
+	animation-delay: 1.5s;
 }
 #hero h1 span {
 	position: absolute;
@@ -127,10 +140,10 @@ ul {
 	animation-delay: 0.5s;
 }
 #hero h1:nth-child(2) span {
-	animation-delay: 1.5s;
+	animation-delay: 0.1s;
 }
 #hero h1:nth-child(3) span {
-	animation-delay: 2.5s;
+	animation-delay: 1s;
 }
 /* About Section */
 
@@ -225,3 +238,64 @@ ul {
 	}
 }
 
+/* arrow */
+.loading-container {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    animation: loading-appear 0.5s ease-in-out 2.2s forwards;
+}
+
+.loading-scroll {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    animation: loading-down 1.5s infinite;
+    -webkit-animation: loading-down 1.5s infinite;
+}
+
+.loading-scroll::before {
+    content: '';
+    position: absolute;
+   bottom: 60px;
+    left: 18px;
+    width: 18px;
+    height: 18px;
+    border-left: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    transform: rotate(-45deg);
+}
+
+@keyframes loading-down {
+    0% {
+        transform: translate(0);
+    }
+    20% {
+        transform: translateY(15px);
+    }
+    40% {
+        transform: translate(0);
+    }
+}
+
+@-webkit-keyframes loading-down {
+    0% {
+        transform: translate(0);
+    }
+    20% {
+        transform: translateY(15px);
+    }
+    40% {
+        transform: translate(0);
+    }
+}
+
+@keyframes loading-appear {
+    to {
+        opacity: 1;
+    }
+}

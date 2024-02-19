@@ -39,5 +39,9 @@ document.addEventListener('DOMContentLoaded', function () {
             var randomAnimation = animations[Math.floor(Math.random() * animations.length)];
             span.style.animation = `${randomAnimation} .2s ease-in-out forwards`;
         });
+        
     });
 });
+
+
+

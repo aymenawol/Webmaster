@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #ffffff;
 }
 
 .image-container {
@@ -65,43 +65,59 @@ body {
     opacity: 1;
 }
 
-.citations-section {
-    margin-top: 40px;
-    text-align: center;
-}
-
-.citations-section h2 {
-    font-family: 'Arial', sans-serif;
-    font-weight: bold;
-    font-size: 28px;
-    margin-bottom: 20px;
-    color: green;
-}
-
-.citations-section ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.citations-section ul li {
-    font-family: 'Arial', sans-serif;
-    font-size: 18px;
-    margin-bottom: 15px;
-    border-bottom: 1px solid #ddd;
-    padding: 10px;
-}
-
-.citations-section ul li:last-child {
-    border-bottom: none;
-}
-
-.citations-section ul li:before {
+header {
     
-    color: rgb(0, 0, 0);
-    font-weight: bold;
-    display: inline-block;
-    width: 1em;
-    margin-left: -1em;
+    text-align: center;
+    padding: 20px 0;
 }
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.citations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.citations .images-used,
+.citations .sources-used {
+    flex: 0 0 calc(50% - 10px);
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.citations h2 {
+    margin-top: 0;
+}
+
+.citations ul {
+    list-style: none;
+    padding: 0;
+}
+
+.citations ul li {
+    margin-bottom: 10px;
+}
+
+.citations ul li a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .citations .images-used,
+    .citations .sources-used {
+        flex: 0 0 100%;
+    }
+}
