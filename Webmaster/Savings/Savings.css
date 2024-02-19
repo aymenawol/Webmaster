@@ -23,7 +23,7 @@ p {
 	font-size: 4rem;
 	font-weight: 300;
 	color: black;
-	margin-bottom: 10px;
+	margin-bottom: -5px;
 	text-transform: uppercase;
 	letter-spacing: 0.2rem;
 	text-align: center;
@@ -31,24 +31,40 @@ p {
 .section-title span {
 	color: green;
 }
-
-.cta {
-	display: inline-block;
-	padding: 5px 15px; /* Adjusted padding */
-	color: rgb(0, 0, 0);
-	background-color: transparent;
-	border: 2px solid green;
-	font-size: 1.5rem; /* Adjusted font-size */
-	text-transform: uppercase;
-	letter-spacing: 0.05rem; /* Adjusted letter-spacing */
-	margin-top: 30px;
-	transition: 0.3s ease;
-	transition-property: background-color, color;
+/* unique css to me allan ilano */
+.mini-section-title {
+	font-size: 1.5rem;
+	letter-spacing: 0.05rem;
+	text-align: center;
 }
-.cta:hover {
-	color: rgb(0, 0, 0);
-	background-color: rgb(70, 220, 20);
+ul {
+	margin-left: 10vh;
+	
 }
+#source-text {
+	font-size: 0.8rem;
+	color: gray;
+	text-align: center;
+	margin-top: -7px;
+}
+.card {
+	background-color: rgb(144, 255, 144);
+	border-radius: 8px;
+	padding: 20px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	max-width: 95vw;
+	margin: 0 auto;
+  }
+  /*big number part*/
+  #big-number-section {
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+  }
+  .big-number {
+	font-size: 500%;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  }
 
 
 
@@ -116,121 +132,7 @@ p {
 #hero h1:nth-child(3) span {
 	animation-delay: 2.5s;
 }
-
-
-
-/* solutions Section */
-#solutions .solutions {
-    flex-direction: column;
-    text-align: center;
-    max-width: 1500px;
-    margin: 0 auto;
-    padding: 100px 0;
-}
-#solutions .solution-top {
-    max-width: 1000px;
-    margin: 0 auto;
-}
-#solutions .solution-bottom {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 50px;
-}
-#solutions .solution-item {
-    flex-basis: 80%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
-    padding: 30px;
-    border-radius: 10px;
-    background-size: cover;
-    margin: 10px 5%;
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-}
-#solutions .solution-item::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    background-image: linear-gradient(60deg, rgba(41, 50, 60, 0.5) 0%, rgba(72, 85, 99, 0.5) 100%);
-    opacity: 0.9;
-    z-index: -1;
-}
-#solutions .solution-bottom .icon {
-    height: 80px;
-    width: 80px;
-    margin-bottom: 20px;
-}
-#solutions .solution-item h2 {
-    font-size: 2rem;
-    color: white;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-}
-#solutions .solution-item p {
-    color: white;
-    text-align: left;
-}
-
-
-
-
-
-
 /* About Section */
-#about .about {
-	flex-direction: column-reverse;
-	text-align: center;
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 100px 20px;
-}
-#about .col-left {
-	width: 250px;
-	height: 360px;
-}
-#about .col-right {
-	width: 100%;
-}
-#about .col-right h2 {
-	font-size: 1.8rem;
-	font-weight: 500;
-	letter-spacing: 0.2rem;
-	margin-bottom: 10px;
-}
-#about .col-right p {
-	margin-bottom: 20px;
-}
-#about .col-right .cta {
-	color: black;
-	margin-bottom: 50px;
-	padding: 10px 20px;
-	font-size: 2rem;
-}
-#about .col-left .about-img {
-	height: 100%;
-	width: 100%;
-	position: relative;
-	border: 10px solid white;
-}
-#about .col-left .about-img::after {
-	content: '';
-	position: absolute;
-	left: -33px;
-	top: 19px;
-	height: 98%;
-	width: 98%;
-	border: 7px solid green;
-	z-index: -1;
-}
-
 
 /* Keyframes */
 @keyframes hamburger_puls {
@@ -286,16 +188,6 @@ p {
 		font-size: 7rem;
 	}
 
-
-	/* solutions Section */
-	#solutions .solution-bottom .solution-item {
-		flex-basis: 45%;
-		margin: 2.5%;
-	}
-
-
-
-
 	/* About */
 	#about .about {
 		flex-direction: row;
@@ -332,3 +224,4 @@ p {
 		margin: 1.5%;
 	}
 }
+
