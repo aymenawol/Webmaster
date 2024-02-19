@@ -13,7 +13,7 @@ a {
 
 p {
 	color: rgb(0, 0, 0);
-	font-size: 1.4rem;
+	font-size: 1.2rem;
 	margin-top: 5px;
 	line-height: 2.5rem;
 	font-weight: 300;
@@ -27,6 +27,7 @@ p {
 	text-transform: uppercase;
 	letter-spacing: 0.2rem;
 	text-align: center;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 .section-title span {
 	color: green;
@@ -184,7 +185,12 @@ p {
     color: white;
     text-align: left;
 }
-
+#source-text {
+	font-size: 0.8rem;
+	color: gray;
+	text-align: center;
+	margin-top: -100px;
+}
 
 
 /* examples section */
@@ -231,6 +237,14 @@ p {
     width: 100%;
     height: 100%;
     object-fit: cover; 
+}
+.mini-section-title {
+	font-size: 1.5rem;
+	letter-spacing: 0.05rem;
+	text-align: center;
+	margin-top: -75px;
+	margin-bottom: 10px;
+	max-width: 90vw;
 }
 
 
