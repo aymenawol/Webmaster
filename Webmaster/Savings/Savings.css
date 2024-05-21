@@ -71,10 +71,11 @@ p {
 
 .card {
     background-color: #64c868;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 65vw;
+    border: 2px solid #3a9d48;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    max-width: 70vw;
     margin: 0 auto;
     transition: transform 0.3s ease; 
 }
@@ -332,7 +333,6 @@ p {
         opacity: 1;
     }
 }
-
 .calculator {
 	max-width: 1000px;
 	margin: 50px auto;
@@ -340,14 +340,30 @@ p {
 	padding: 20px;
 	border: 1px solid #ccc;
 	border-radius: 5px;
-  }
-  
-  input {
-	width: 100%;
-	margin-bottom: 10px;
-  }
-  
-  .realbutton {
+}
+
+.input-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 10px; 
+}
+
+.input-container label {
+	flex-basis: 40%; 
+	text-align: left;
+	margin-right: 10px;
+}
+
+.input-container input[type="number"] {
+	flex-basis: 60%; 
+	padding: 10px 20px;
+	font-size: 16px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+.realbutton {
 	width: 100%;
 	padding: 10px;
 	background-color: #4CAF50;
@@ -355,24 +371,24 @@ p {
 	border: none;
 	border-radius: 3px;
 	cursor: pointer;
-  }
-  
-  .realbutton:hover {
+}
+
+.realbutton:hover {
 	background-color: #45a049;
-  }
-  
-  #result {
+}
+
+#result {
 	margin-top: 20px;
 	font-weight: bold;
-  }
-  
-  .tooltip {
+}
+
+.tooltip {
 	position: relative;
 	display: inline-block;
 	margin-left: 5px;
-  }
-  
-  .tooltip .tooltiptext {
+}
+
+.tooltip .tooltiptext {
 	visibility: hidden;
 	width: 300px;
 	background-color: #333333;
@@ -387,23 +403,23 @@ p {
 	margin-left: -100px;
 	opacity: 0;
 	transition: opacity 0.3s;
-  }
-  
-  .tooltip:hover .tooltiptext {
+}
+
+.tooltip:hover .tooltiptext {
 	visibility: visible;
 	opacity: 1;
-  }
-  
-  .tooltip::after {
+}
+
+.tooltip::after {
 	content: "How?"; 
 	color: #4CAF50; 
 	position: absolute;
 	top: 90%;
 	left: 0;
 	transform: translateY(-70%);
-  }
+}
 
-  .calc-message {
+.calc-message {
 	background-color: #f2f2f2;
 	margin-top: 50px;
 	padding: 20px;
@@ -418,21 +434,5 @@ p {
 	font-size: 16px;
 	color: #333;
 	text-align: center;
-	
-}
-
-.input-container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-bottom: 10px; 
-}
-
-.calculator input[type="number"] {
-	padding: 10px 20px;
-	font-size: 16px;
-	border: 1px solid #ccc;
-	border-radius: 5px;
-	
 }
 

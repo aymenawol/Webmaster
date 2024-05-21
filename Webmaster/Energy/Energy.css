@@ -48,6 +48,7 @@ p {
 .cta:hover {
 	color: white;
 	background-color: rgb(70, 220, 20);
+	text-decoration: none;
 }
 .brand h1 {
 	font-size: 3rem;
