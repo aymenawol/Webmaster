@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+  
+}
 /* section styles */
 section {
     height: 100vh;
@@ -74,6 +78,7 @@ section {
     letter-spacing: 8px;
     background-color: green;
     color: white;
+    text-decoration: none;
 }
   
 
@@ -245,7 +250,7 @@ section {
     align-items: center;
     justify-content: center;
     opacity: 0;
-    animation: loading-appear 0.5s ease-in-out 2.5s forwards;
+    animation: loading-appear 0.5s ease-in-out 3.5s forwards;
 }
 
 .loading-scroll {
@@ -259,7 +264,7 @@ section {
 .loading-scroll::before {
     content: '';
     position: absolute;
-    top: 295px;
+    top: 415px;
     left: 18px;
     width: 18px;
     height: 18px;
@@ -357,6 +362,13 @@ h2 {
   right: 30px;
 }
 
+h1 {
+  font-size: 28px;
+  top: 170px;
+}
+
 h2 {
   font-size: 28px;
+  top: 190px;
 }
+

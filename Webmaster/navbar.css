@@ -1,95 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif; 
 }
 
-/* body styles */
-body {
-    font-family: 'Poppins', 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    line-height: 1.6;
-    background-color: #ffffff;
-    overflow-x: hidden;
+.custom-navbar {
+  background-color: #333 !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+  padding: 10px 20px !important;
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 1000 !important;
 }
 
-/* navigation styles */
-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
-    z-index: 10;
-    padding: 10px 20px;
+.navbar-brand {
+  color: #ffffff !important;
+  transition: color 0.3s !important;
+  font-size: 1.9rem !important;
+  padding: 0 !important;
+  margin-left: 130px !important;
 }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    background-color: #333;
+
+.navbar-nav {
+  margin-left: auto !important;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 80px;
+.navbar-nav .nav-link {
+  color: #ffffff !important;
+  position: relative; 
+  transition: color 0.3s, border-bottom-color 0.3s; 
+  padding: 10px 15px !important;
+  font-size: 1.1rem !important;
+  margin-right: 50px !important;
 }
 
-.menu-item {
-    position: relative;
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    padding: 2px;
-    font-family: 'Arial', sans-serif;
-    font-size: 16px;
-    transition: color 0.3s ease-in-out, opacity 0.3s ease-in-out;
+.navbar-nav .nav-link::before { 
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: transparent;
+  transition: background-color 0.3s;
 }
 
-.menu-item::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: #2ecc71;
-    transition: width 0.3s ease-in-out;
+.navbar-nav .nav-link:hover::before { 
+  background-color: #2be332;
 }
 
-.menu-item:hover::before {
-    width: 100%;
+.navbar-nav .nav-link:hover {
+  color: #2be332 !important;
 }
 
-.menu-item:hover {
-    color: #2ecc71;
-}
-/*adding this back for opacity fade out*/
-#menu-items:hover .menu-item {
-    opacity:0.3;
-    
-}
-#menu-items:hover .menu-item:hover {
-    color: #2ecc71;
-    opacity: 1;
-    
+.navbar-toggler {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
 }
 
-.logo img {
-    height: 40px;
-    margin-left: 20px;
+.navbar-toggler-icon {
+  background-color: transparent !important;
+  border: 2px solid #ffffff !important;
+  border-radius: 4px !important;
+  width: 30px !important;
+  height: 30px !important;
+  position: relative !important;
 }
 
-.header-title {
-    font-size: 1.5em;
-    color: #fff;
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+  content: '' !important;
+  position: absolute !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  width: 20px !important;
+  height: 2px !important;
+  background-color: #ffffff !important;
 }
+
+.navbar-toggler-icon::before {
+  top: 8px !important;
+}
+
+.navbar-toggler-icon::after {
+  bottom: 8px !important;
+}
+
+.navbar-toggler-icon span {
+  display: block !important;
+  width: 20px !important;
+  height: 2px !important;
+  background-color: #ffffff !important;
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+}
+.navbar-toggler-icon:hover {
+  background-color: #ffffff !important;
+  border-color: #ffffff !important;
+}
+
+.navbar-toggler-icon:hover::before,
+.navbar-toggler-icon:hover::after {
+  background-color: #333 !important;
+}
+
+.green-text {
+  color: #2be332 !important; 
+}
+
